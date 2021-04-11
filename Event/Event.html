@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"> 　
+        <!--基本形-->
+        <button v-on:click="onclick">クリック</button>
+        <!--JavaScript式を直書き-->
+        <button v-on:click="message=new Date().toLocaleString()">クリック</button>
+        <!--メソッド呼び出し-->
+        <button v-on:click="onclick()">クリック</button>
+        <p>{{ message }}</p> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"> </script>
+    <script src="./lib/event.js"></script>
+</body>
+</html>
