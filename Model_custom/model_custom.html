@@ -9,12 +9,16 @@
 <body>
     <div id="app"> 　
         <form>
-            <label for="agree">同意する：</label>
-            <input type="checkbox" id="agree" v-model="agree" true-value="○" false-value="×" />
+            <label for="name">メールアドレス：</label>
+            <textarea v-bind:value="emails.join(';')" v-on:input="emails=$event.target.value.split(';')"></textarea>
         </form>
-        <div>回答：{{ agree }}</div>
+        <ul>
+            <li v-for="email in emails">
+                {{ email }}
+            </li>
+        </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"> </script>
-    <script src="./lib/model_check.js"></script>
+    <script src="./lib/model_custom.js"></script>
 </body>
 </html>

@@ -9,12 +9,11 @@
 <body>
     <div id="app"> 　
         <form>
-            <label for="agree">同意する：</label>
-            <input type="checkbox" id="agree" v-model="agree" true-value="○" false-value="×" />
+            <label for="message">メッセージ</label>
+            <input type="text" id="message" v-model.trim="message" v-on:change="onchange" />
         </form>
-        <div>回答：{{ agree }}</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"> </script>
-    <script src="./lib/model_check.js"></script>
+    <script src="./lib/model_trim.js"></script>
 </body>
 </html>

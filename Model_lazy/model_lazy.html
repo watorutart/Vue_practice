@@ -9,12 +9,12 @@
 <body>
     <div id="app"> 　
         <form>
-            <label for="agree">同意する：</label>
-            <input type="checkbox" id="agree" v-model="agree" true-value="○" false-value="×" />
+            <label for="name">氏名：</label>
+            <input type="text" id="name" v-model.lazy="myName" />
         </form>
-        <div>回答：{{ agree }}</div>
+        <div>こんにちは、{{ myName }}さん！</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"> </script>
-    <script src="./lib/model_check.js"></script>
+    <script src="./lib/model_lazy.js"></script>
 </body>
 </html>
