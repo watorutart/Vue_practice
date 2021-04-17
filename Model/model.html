@@ -8,9 +8,13 @@
 </head>
 <body>
     <div id="app"> 　
-        <div id="main" v-on:click.right="onclick">test</div>
+        <form>
+            <label for="name">氏名：</label>
+            <input type="text" id="name" v-model="myName" />
+        </form>
+        <div>こんにちは、 {{ myName }} さん!</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"> </script>
-    <script src="./lib/eventMouse.js"></script>
+    <script src="./lib/model.js"></script>
 </body>
 </html>
