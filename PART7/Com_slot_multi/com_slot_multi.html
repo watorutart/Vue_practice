@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"> 　
+        <my-hello>
+            <h3 slot="header">ようこそ速習Vue.jsへ</h3>
+            <p>一緒に勉強しましょう</p>
+            <span slot="footer">WINGSプロジェクト</span>
+            <p>質問は掲示板へどうぞ。</p>
+            <a slot="footer" href="#">Q&A掲示板</a>
+        </my-hello>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"> </script>
+    <script src="./lib/com_slot_multi.js"></script>
+</body>
+</html>
